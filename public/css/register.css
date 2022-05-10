@@ -1,0 +1,77 @@
+/* **************************************register********************* */
+:root {
+  --Amarillo: #eac926;
+  --Azul: #03264c;
+  --Celeste: #1259c3;
+  --Gris-oscuro: #666;
+  --Gris-claro: #ebebeb;
+  --Verde: #39b54a;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 0px 20px;
+  align-items: center;
+  
+}
+
+.control-div {
+  margin-bottom: 18px;
+}
+
+.campos-relleno {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.check{
+  font-size: 12px;
+  font-family: roboto;
+}
+.button{
+  background-color: var(--Celeste);
+  color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+h2{
+  font-size: 8px;
+  color: #666;
+}
+
+.footer-icon:hover{
+  color: #39b54a;
+}
+/* *********************************MEDIA QUERY********************************** */
+
+
+@media (min-width: 769px) {
+         
+     
+  .footer-2{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top:10%;
+    
+   
+ } 
+ 
+    h5{
+     font-size: 8px;
+     text-align: left;
+   }
+ }

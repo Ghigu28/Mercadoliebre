@@ -1,0 +1,423 @@
+@import url("login.css");
+@import url("register.css");
+
+:root {
+  --Amarillo: #eac926;
+  --Azul: #03264c;
+  --Celeste: #1259c3;
+  --Gris-oscuro: #666;
+  --Gris-claro: #ebebeb;
+  --Verde: #39b54a;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  background-color: #ebebeb;
+}
+
+/***********************estilos header*****************/
+
+* {
+  box-sizing: border-box;
+}
+
+.main-header {
+  background-color: var(--Amarillo);
+  padding: 20px;
+}
+
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 45%;
+}
+
+.campo-busqueda {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  background-color: var(--Gris-claro);
+  border: solid 1px #ebebeb;
+  border-radius: 5px;
+  margin: auto;
+
+  align-items: center;
+}
+
+.titulo-compras {
+  display: flex;
+  font-size: 12px;
+  color: #222;
+  font-weight: bold;
+  margin: 30px 0px 20px 0px;
+  align-self: center;
+}
+
+.main-navbar {
+  display: none;
+}
+
+.hamburguer-button {
+  background-color: #3264ac;
+  color: white;
+  display: block;
+  max-width: 35px;
+  padding: 10px 0px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+p {
+  font-size: 12px;
+}
+
+.banner {
+  width: 100vw;
+}
+
+/******************** Estilos y propiedades del main *************************************/
+
+main {
+  width: 90vw;
+  margin: auto;
+}
+
+.wrap-dinamico {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.imgProducts {
+  width: 100%;
+  padding: 10%;
+}
+
+.producto-main {
+  background-color: white;
+  margin: 20px;
+  width: 85%;
+}
+
+/* *************position padre de camion*************** */
+
+.info-producto {
+  border-top: solid 1px #ebebeb;
+  width: 100%;
+  text-align: center;
+  line-height: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.contenedor-precio-descuento {
+  display: flex;
+  justify-content: space-between;
+}
+
+article div p {
+  font-size: 18px;
+}
+
+/* *************position hijo de info-producto*************** */
+
+.camion {
+  width: 27px;
+  height: 27px;
+  color: #39b54a;
+  text-align: center;
+  border: solid 1px #39b54a;
+  border-radius: 50%;
+  position: absolute;
+  right: 15%;
+  top: -15%;
+  padding: 5px 0px 0px 0px;
+  transition: 0.5s;
+}
+
+.camion:hover {
+  transform: rotate(270deg);
+}
+
+.precio {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px 0px 0px 12px;
+  width: 30%;
+  margin-left: 10px;
+}
+
+.descuento {
+  color: #39b54a;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  width: 70%;
+}
+
+.producto {
+  color: var(--Gris-oscuro);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 25px;
+}
+
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  color: var(--Gris-oscuro);
+}
+
+h4 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: var(--Gris-oscuro);
+}
+
+/******************************Estilos Footer***********************************************************/
+footer {
+  
+  background-color: white;
+  padding: 10% 15% 10% 15%;
+}
+
+.footer-texto {
+  text-align: center;
+  color: var(--Gris-oscuro);
+  padding: 0% 2% 0% 0%;
+}
+
+.tarjeta {
+  font-size: 1em;
+  color: var(--Celeste);
+}
+
+.regalo {
+  font-size: 1em;
+  color: var(--Celeste);
+}
+
+.seguro {
+  font-size: 1em;
+  color: var(--Celeste);
+}
+
+.footer-lineas {
+  font-size: 10px;
+}
+
+h2 {
+  margin: auto;
+  font-size: 10px;
+}
+
+.footer-copyright {
+  width: 100%;
+}
+
+h5 {
+  font-size: 10px;
+  text-align: center;
+}
+
+.footer-icon:hover {
+  color: #39b54a;
+}
+/* ******************************MEDIA QUERIES********************************** */
+
+/* +++++++++++++++++++++++++++++++++++TABLET++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media (min-width: 481px) {
+  .hamburguer-button {
+    display: none;
+  }
+
+  .producto-main {
+    width: 40%;
+    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+  }
+
+  .main-header {
+    padding: 10px 10px 0px 10px;
+  }
+
+  .header-top {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo {
+    width: 22vw;
+    padding-left: 12px;
+  }
+
+  .campo-busqueda {
+    background-color: var(--Gris-claro);
+    border-radius: 5px;
+    width: 21vw;
+    height: 3vh;
+    margin: 20px 0px 20px 10px;
+  }
+
+  .title {
+    font-size: 8px;
+  }
+
+  .titulo-compras {
+    font-size: 9px;
+    margin: auto;
+  }
+
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-navbar ul {
+    display: flex;
+    text-decoration: none;
+    list-style: 10px;
+    padding: 1px;
+    margin: auto;
+  }
+
+  .main-navbar li {
+    margin: 10px 0px 10px 0px;
+  }
+  .main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 10px;
+    padding: 0px 7px 0px 5px;
+  }
+}
+
+.precio {
+  color: black;
+  font-size: 14px;
+  padding-top: 8px;
+}
+
+.descuento {
+  font-size: 14px;
+  padding-top: 8px;
+}
+
+.producto {
+  color: var(--Gris-oscuro);
+  font-size: 12px;
+}
+
+.canasto {
+  font-size: 1em;
+}
+
+/************************laptop******************************************************************* */
+
+@media (min-width: 769px) {
+  .producto-main {
+    width: 19%;
+  }
+
+  .logo {
+    width: 25%;
+    padding-right: 8px;
+    padding-left: 5%;
+  }
+
+  .campo-busqueda {
+    display: flex;
+    width: 20vw;
+  }
+
+  .title {
+    font-size: 12px;
+    margin: auto;
+  }
+
+  .titulo-compras {
+    font-size: 14px;
+  }
+
+  .main-navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-navbar li {
+    margin: 20px 5px 20px 10px;
+  }
+
+  .main-navbar a {
+    font-size: 14px;
+  }
+  .descuento {
+    text-align: left;
+    width: 60%;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .precio {
+    font-size: 12px;
+    margin: 15px 30px 0px 0px;
+  }
+  .producto {
+    font-size: 10px;
+    margin: 10px 0px 10px 20px;
+  }
+
+
+  .producto-hover{
+    display: none;
+  }
+ 
+  .info-producto:hover .producto-hover{
+    display: block;
+     }
+
+.producto-main:hover{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  
+  }
+
+
+
+  footer {
+    background-color: white;
+    padding: 7% 10% 5% 3%;
+  }
+  .footer-2 {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+
+  .footer-lineas {
+    font-size: 8px;
+  }
+
+  h5 {
+    font-size: 10px;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+}
