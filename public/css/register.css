@@ -11,9 +11,8 @@
 .form-register {
   display: flex;
   flex-direction: column;
-  padding: 20px 0px 0px 20px;
-  align-items: center;
-  
+  padding: 10% 20% 10% 25%;
+    
 }
 
 .control-div {
